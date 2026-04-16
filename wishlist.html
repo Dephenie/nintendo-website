@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="icon" type="image/x-icon" href="images/Nintendo-Logo.png">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wishlist-page">
+    <!--Navigation bar, create navigation menu for switching between pages-->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Nintendo</a>
+
+            <!--Menu logo for small device that can't display full menu-->
+            <button title="Toggle navigation" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="console.html">Consoles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE ================= -->
+    <div class="container my-5">
+
+        <!-- HEADER -->
+        <div class="text-center mb-4">
+            <h1>My Wishlist</h1>
+            <p>Save games you want to play later 🎮</p>
+        </div>
+
+        <!-- TOOLBAR -->
+        <div class="mb-3 d-flex align-items-center gap-2 flex-wrap">
+
+            <!-- Search -->
+            <input type="text" id="wishlistSearch" class="form-control flex-grow-1" placeholder="Search wishlist...">
+
+            <!-- Buttons -->
+            <button id="sortBtn" class="btn btn-danger">Sort A-Z</button>
+            <button id="clearBtn" class="btn btn-outline-danger">Clear All</button>
+
+        </div>
+
+        <!-- WISHLIST ITEMS -->
+        <div class="row" id="wishlistContainer"></div>
+
+        <!-- Empty Message -->
+        <div id="emptyMessage" class="text-center text-muted mt-4 hidden">
+            <h5>No items yet ❤️</h5>
+            <p>Start adding games to your wishlist!</p>
+        </div>
+
+    </div>
+
+    <!--Footer, show copywrite information-->
+    <footer class="footer text-center">
+        © 2026 Student project – UCCD2323 Front-End Web Development, UTAR.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

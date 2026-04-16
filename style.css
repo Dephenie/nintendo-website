@@ -1,0 +1,400 @@
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #dbe9f8;
+    color: #212529;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+/* ================= NAVBAR ================= */
+.custom-nav {
+    background: linear-gradient(90deg, #fc3c3c, #f97575);
+    padding: 15px 30px;
+}
+
+.navbar-brand {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-nav {
+    font-size: 16px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: yellow !important;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ================= CARDS ================= */
+.card {
+    background: #1e293b !important;
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px red;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Dark card version*/
+.dark-card {
+    background: #1e293b !important;
+    color: white !important;
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px red;
+}
+
+.dark-card button {
+    margin-top: auto;
+}
+
+.dark-card img {
+    height: 180px;
+    object-fit: contain;
+    background: white;
+    border-radius: 10px;
+}
+
+.dark-card h5 {
+    color: #ffffff;
+}
+
+.desc {
+    color: #ccc;
+    font-size: 14px;
+    margin: 8px 0 12px;
+}
+
+.desc2 {
+    color: #888;
+    font-size: 14px;
+    margin: 8px 0 12px;
+}
+
+/* price styling */
+.price {
+    color: red;
+    margin: 10px 0;
+}
+
+/* Hidden details text style */
+.collapse {
+    font-size: 14px;
+    color: #ccc;
+    transition: none !important;
+}
+
+/* Spacing between detail lines */
+.collapse p {
+    margin-bottom: 5px;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+    background-color: red !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: darkred;
+}
+
+/* ================= SECTION HEADER ================= */
+.section-header {
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 32px;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background: red;
+    margin: 10px auto 20px;
+    border-radius: 5px;
+}
+
+.subtext {
+    color: #595959;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* ------------------------------- table for console page ------------------------------- */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e293b !important;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-table th {
+    background: red;
+    padding: 12px;
+    text-align: center;
+}
+
+/* First column highlight */
+.custom-table td:first-child {
+    color: #60a5fa;
+    font-weight: bold;
+    border-left: 4px solid #3b82f6;
+    padding-left: 10px;
+}
+
+.custom-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.custom-table tr:nth-child(odd) {
+    background: #1e293b;
+}
+
+.custom-table tr:nth-child(even) {
+    background: #2a3446;
+}
+
+.custom-table tr:hover {
+    background: rgba(255, 0, 0, 0.15);
+}
+
+.check {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.cross {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Section title */
+.section-title h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    color: #212529;
+}
+
+/* Subtitle */
+.section-title p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Center underline */
+.underline {
+    width: 60px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Left underline */
+.underline-left {
+    width: 60px;
+    height: 4px;
+    background: red;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* ------------------------------------ game page ------------------------------------ */
+#searchBar,
+#genreFilter {
+    background: #1e293b;
+    color: white;
+    border: 1px solid #2a3446;
+    border-radius: 8px;
+}
+
+#searchBar::placeholder {
+    color: #aaa;
+}
+
+#searchBar:focus,
+#genreFilter:focus {
+    border-color: red;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+.game .card {
+    background: #1e293b !important;
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+/* Game image */
+.game .card img {
+    height: 180px;
+    width: 100%;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Game title */
+.game .card h5 {
+    color: #ff4d4d;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.release {
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* --------------------------------------- news page ---------------------------------------- */
+/* Hover preview box */
+.hover-preview {
+    position: absolute;
+    width: 220px;
+    background: #1e293b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
+    z-index: 999;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.hover-preview img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.hover-preview p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* Hover effect on list */
+.news-item {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.news-item:hover {
+    background: #1e293b;
+    color: white;
+    transform: scale(1.02);
+}
+
+/* ----------------------------- wishlist & community page ----------------------------- */
+.wishlist-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wishlist-page .container {
+    flex: 1;
+}
+
+.wishlist-page .footer {
+    margin-top: auto;
+}
+
+.post-card {
+    max-width: 1080px;
+    margin: auto;
+}
+
+#postsContainer .card {
+    max-width: 1080px;
+    margin: 0 auto 15px auto;
+}
+
+input, textarea, select {
+    border-radius: 8px;
+}
+
+.comment-box {
+    background-color: #f1f3f5;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: black;
+    color: #aaa;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 15px;
+    border-top: 3px solid red !important;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1080px) {
+    .post-card,
+    #postsContainer .card {
+        max-width: 100%;
+    }
+}

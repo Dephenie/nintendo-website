@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Game Library</title>
+    <link rel="icon" type="image/x-icon" href="images/Nintendo-Logo.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation bar, create the navigation menu for switching between pages-->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Nintendo</a>
+            <!--Menu logo for small device that can't display full menu-->
+            <button title="Toggle navigation" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="console.html">Consoles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE ================= -->
+    <div class="container my-5">
+
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h1>Game Library</h1>
+            <p>Browse games by category</p>
+        </div>
+
+        <!-- Search + Filter (FIXED RESPONSIVE) -->
+        <div class="d-flex flex-wrap gap-3 mb-4">
+
+            <input type="text" id="searchBar" class="form-control flex-grow-1" placeholder="Search games...">
+
+            <select title="Genre Filter" id="genreFilter" class="form-select">
+                <option value="all">All Categories</option>
+                <option value="adventure">Adventure</option>
+                <option value="racing">Racing</option>
+                <option value="simulation">Simulation</option>
+                <option value="role-playing">Role-playing</option>
+                <option value="action">Action</option>
+                <option value="sports">Sports</option>
+            </select>
+
+        </div>
+
+        <!-- Games -->
+        <div class="row" id="gameList">
+
+            <!-- Adventure -->
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Adventure" data-title="Slime Rancher"
+                data-image="images/adventure1.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/adventure1.jpeg" class="card-img-top" alt="Slime Rancher">
+                    <div class="card-body">
+                        <h5>Slime Rancher</h5>
+                        <p class="desc">A farming simulation game where you raise and care for slimes.</p>
+                        <p class="release">Release: 8 November 2021</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Adventure" data-title="Super Mario Odyssey"
+                data-image="images/adventure2.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/adventure2.jpeg" alt="Super Mario Odyssey" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Super Mario Odyssey</h5>
+                        <p class="desc">Platform adventure.</p>
+                        <p class="release">Release: 27 October 2017</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Adventure" data-title="Pac-Man WORLD Re-Pac"
+                data-image="images/adventure3.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/adventure3.jpeg" alt="Pac-Man WORLD Re-Pac" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pac-Man WORLD Re-Pac</h5>
+                        <p class="desc">Classic arcade game.</p>
+                        <p class="release">Release: 26 August 2022</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Racing -->
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Racing" data-title="Mario Kart 8 Deluxe"
+                data-image="images/racing.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/racing.jpeg" alt="Mario Kart 8 Deluxe" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Mario Kart 8 Deluxe</h5>
+                        <p class="desc">Racing excitement.</p>
+                        <p class="release">Release: 28 April 2017</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulation -->
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Simulation" data-title="Animal Crossing"
+                data-image="images/simulation.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/simulation.jpeg" alt="Animal Crossing" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Animal Crossing</h5>
+                        <p class="desc">Build your island.</p>
+                        <p class="release">Release: 20 March 2020</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- role-playing -->
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Role-Playing" data-title="Pokémon Scarlet"
+                data-image="images/rpg1.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/rpg1.jpeg" alt="Pokémon Scarlet" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pokémon Scarlet</h5>
+                        <p class="desc">Catch Pokémon.</p>
+                        <p class="release">Release: 18 November 2022</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Role-Playing" data-title="Disney Dreamlight Valley"
+                data-image="images/rpg2.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/rpg2.jpeg" alt="Disney Dreamlight Valley" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Disney Dreamlight Valley</h5>
+                        <p class="desc">Covering gameplay, characters, quests, cooking and more.</p>
+                        <p class="release">Release: 6 September 2022</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action -->
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Action" data-title="Super Smash Bros Ultimate"
+                data-image="images/action1.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/action1.jpeg" alt="Super Smash Bros Ultimate" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Super Smash Bros Ultimate</h5>
+                        <p class="desc">Battle game.</p>
+                        <p class="release">Release: 7 December 2018</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Action" data-title="Overcooked! 2"
+                data-image="images/action2.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/action2.jpeg" alt="Overcooked! 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Overcooked! 2</h5>
+                        <p class="desc">Team cooking game.</p>
+                        <p class="release">Release: 7 August 2018</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Action" data-title="Minecraft"
+                data-image="images/action3.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/action3.jpeg" alt="Minecraft" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Minecraft</h5>
+                        <p class="desc">Explore a world as a builder and survivalist.</p>
+                        <p class="release">Release: 20 June 2018</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports -->
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Sports" data-title="Nintendo Switch Sports"
+                data-image="images/sports1.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/sports1.jpeg" alt="Nintendo Switch Sports" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Nintendo Switch Sports</h5>
+                        <p class="desc">Motion sports game.</p>
+                        <p class="release">Release: 29 April 2022</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 game" data-genre="Sports" data-title="Mario Tennis Fever"
+                data-image="images/sports2.jpeg">
+                <div class="card dark-card p-3 text-center">
+                    <img src="images/sports2.jpeg" alt="Mario Tennis Fever" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Mario Tennis Fever</h5>
+                        <p class="desc">Multiplayer sports game.</p>
+                        <p class="release">Release: 12 February 2026</p>
+                        <button class="btn btn-danger btn-sm mt-2" onclick="addToWishlist(this)">❤️ Add to
+                            Wishlist</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ================= API SECTION ================= -->
+    <div class="container my-5">
+        <h2 class="text-center mb-3">🎮 Live Games (API)</h2>
+        <p class="text-center">Fetched from RAWG API</p>
+
+        <div class="row" id="apiGames"></div>
+    </div>
+
+    <!--Footer, show copywrite information-->
+    <footer class="footer text-center">
+        © 2026 Student project – UCCD2323 Front-End Web Development, UTAR.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

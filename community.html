@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="icon" type="image/x-icon" href="images/Nintendo-Logo.png">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Nintendo</a>
+
+            <!-- Toggle button for mobile view -->
+            <button title="Toggle navigation" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="console.html">Consoles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Game Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="community.html">Community</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ================= PAGE ================= -->
+    <div class="container my-5">
+
+        <!-- HEADER -->
+        <div class="text-center mb-4">
+            <h1>Community Forum</h1>
+            <p>Discuss your favourite games and consoles!</p>
+        </div>
+
+        <!-- CREATE POST CARD -->
+        <div class="card dark-card shadow-sm mb-4 post-card">
+            <div class="card-body">
+
+                <h4 class="mb-3">Create a Post</h4>
+
+                <!-- Input fields -->
+                <input type="text" id="username" class="form-control mb-2" placeholder="Your Name">
+                <input type="text" id="title" class="form-control mb-2" placeholder="Post Title">
+                <textarea id="content" class="form-control mb-2" placeholder="Write something..."></textarea>
+
+                <!-- Category dropdown -->
+                <select title="Category" id="category" class="form-select mb-3 w-auto">
+                    <option value="game">Game</option>
+                    <option value="console">Console</option>
+                </select>
+
+                <!-- Action buttons -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-danger" onclick="addPost()">Post</button>
+                    <button class="btn btn-outline-danger ms-2" onclick="clearAll()">Clear All</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOOLBAR (SEARCH + FILTER) -->
+        <div class="mb-3 d-flex align-items-center gap-2 flex-wrap">
+
+            <!-- Search -->
+            <input type="text" id="search" class="form-control flex-grow-1" placeholder="Search posts..." onkeyup="searchPosts()">
+
+            <!-- Post Count -->
+            <p id="postCount" class="mb-0 fw-bold"></p>
+
+            <!-- Trending and Reset buttons -->
+            <button class="btn btn-warning" onclick="showTrending()">🔥 Trending</button>
+            <button class="btn btn-secondary" onclick="resetPosts()">All</button>
+
+            <!-- Category Filter -->
+            <select title="Category" id="categoryFilter" class="form-select w-auto" onchange="filterCategory()">
+                <option value="all">All</option>
+                <option value="game">Game</option>
+                <option value="console">Console</option>
+            </select>
+        </div>
+
+        <!-- POSTS -->
+        <div id="postsContainer"></div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center mt-5">
+        <p>© 2026 Student project – UCCD2323 Front-End Web Development, UTAR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

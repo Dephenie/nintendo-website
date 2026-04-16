@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>News</title>
+    <link rel="icon" type="image/x-icon" href="images/Nintendo-Logo.png">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation bar, create navigation menu for switching between pages-->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Nintendo</a>
+
+            <!--Menu logo for small device that can't display full menu-->
+            <button title="Toggle navigation" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="console.html">Consoles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h1>Latest News</h1>
+            <p>Stay updated with Nintendo games</p>
+        </div>
+
+        <!-- News Container -->
+        <div id="newsContainer" class="row"></div>
+
+        <!-- Upcoming Section -->
+        <ul class="list-group mb-4">
+
+            <li class="list-group-item news-item" data-img="images/news1.jpeg"
+                data-desc="Get ready to tune in when Rhythm Heaven Groove launches for Nintendo Switch on 2 July. The game will also be playable on Nintendo Switch 2.">
+                Rhythm Heaven Groove comes to Nintendo Switch on 2 July - 14 April 2026
+            </li>
+
+            <li class="list-group-item news-item" data-img="images/news2.jpeg"
+                data-desc="Oh, hey, classic game fans! If you’ve been looking to create (or recreate) some retro memories, Nintendo Switch Online members can get access to a wide variety of classic goodies from the following systems: Super NES, Game Boy, NES">
+                New update for Nintendo Switch Online members. - 9 April 2026
+            </li>
+
+            <li class="list-group-item news-item" data-img="images/news3.jpeg"
+                data-desc="Tomodachi Life: Living the Dream, a new life simulation game where you can create your own Mii and explore a vibrant world filled with quirky characters and fun activities.">
+                Introduce to our new game Tomodachi Life: Living the Dream - 1 April 2026
+            </li>
+
+        </ul>
+
+        <!-- Hover Preview Box -->
+        <div id="hoverPreview" class="hover-preview d-none">
+            <img id="previewImg" src="" alt="Preview Image">
+            <p id="previewDesc"></p>
+        </div>
+
+        <!-- YouTube Trailer -->
+        <div class="text-center mt-5">
+            <h2>Latest Trailer</h2>
+
+            <iframe title="Latest Trailer" width="560" height="315" src="https://www.youtube.com/embed/PNQxknspka4?si=LEN1UiPEapx99Yb1"
+                allowfullscreen>
+            </iframe>
+            <iframe title="Another Trailer" width="560" height="315" src="https://www.youtube.com/embed/9VMBJOqyoho?si=99AIJhzxxgPVJ20A"
+                allowfullscreen>
+            </iframe>
+
+
+        </div>
+
+    </div>
+
+    <!--Footer, show copywrite information-->
+    <footer class="footer text-center">
+        © 2026 Student project – UCCD2323 Front-End Web Development, UTAR.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

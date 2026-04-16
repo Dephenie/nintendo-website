@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Console</title>
+    <link rel="icon" type="image/x-icon" href="images/Nintendo-Logo.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar, create navigation menu for switching between pages-->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Nintendo</a>
+
+            <!--Menu logo for small device that can't display full menu-->
+            <button title="Toggle navigation" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="console.html">Consoles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Section Header, shows the page title and short description-->
+    <div class="section-title text-center mt-5">
+        <h2>Our Models</h2>
+        <div class="underline"></div>
+        <p>Each model is built for a different kind of gamer - explore them all.</p>
+    </div>
+
+    <!--Product cards, display product with image, description, price and button-->
+    <div class="container mt-5">
+        <div class="row g-4">
+
+            <!-- Switch -->
+            <div class="col-md-4">
+                <div class="card dark-card">
+                    <img alt="Nintendo Switch" src="images/NintendoSwitch.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Nintendo Switch</h5>
+                        <p class="desc">Play at home or on the go with this hybrid console.</p>
+                        <button class="btn btn-primary view-btn" data-bs-toggle="collapse" data-bs-target="#spec1">
+                            View Specs
+                        </button>
+                        <!--Collapse details, show additional product information when user click the button-->
+                        <div id="spec1" class="collapse mt-2">
+                            <p>Display: 6.2 inch LCD, 1280x720 resolution </p>
+                            <p>Battery: 4310 mAh </p>
+                            <p>Storage: 32GB (expandable)</p>
+                            <p>Weight: 297g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OLED -->
+            <div class="col-md-4">
+                <div class="card dark-card">
+                    <img alt="Nintendo Switch OLED" src="images/NintendoSwitchOLED.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Switch OLED</h5>
+                        <p class="desc">Enhanced display with vibrant OLED screen</p>
+                        <button class="btn btn-primary view-btn" data-bs-toggle="collapse" data-bs-target="#spec2">
+                            View Specs
+                        </button>
+                        <!--Collapse details, show additional product information when user click the button-->
+                        <div id="spec2" class="collapse mt-2">
+                            <p>Screen: 7 inch OLED multi-touch screen, 1280x720 resolution</p>
+                            <p>Battry: 4310 mAh</p>
+                            <p>Storage: 64GB (expandable)</p>
+                            <p>Weight: 320g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lite -->
+            <div class="col-md-4">
+                <div class="card dark-card">
+                    <img alt="Nintendo Switch Lite" src="images/NintendoSwitchLite.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Switch Lite</h5>
+                        <p class="desc">Compact and lightweight for handheld gaming</p>
+                        <button class="btn btn-primary view-btn" data-bs-toggle="collapse" data-bs-target="#spec3">
+                            View Specs
+                        </button>
+                        <!--Collapse details, show additional product information when user click the button-->
+                        <div id="spec3" class="collapse mt-2">
+                            <p>Display: 5.5 inch LCD capacitive touch screen, 1280x720 resolution</p>
+                            <p>Battery: 3570 mAh</p>
+                            <p>Storage: 32GB (expandable)</p>
+                            <p>Weight: 275g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Comparison Table section, display a table to compare between different switch models-->
+    <div class="container mt-5">
+        <div class="section-title text-start mt-5">
+            <h2>Model Comparison Table</h2>
+            <div class="underline-left"></div>
+            <p>Compare key features to find the best model for you</p>
+        </div>
+        <div class="table-responsive">
+            <table class="custom-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Switch</th>
+                    <th>Switch OLED</th>
+                    <th>Switch Lite</th>
+                </tr>
+                <tr>
+                    <td>Screen Size</td>
+                    <td>6.2 inch LCD</td>
+                    <td>7.0 inch OLED</td>
+                    <td>5.5 inch OLED</td>
+                </tr>
+                <tr>
+                    <td>Resolution</td>
+                    <td>1280x720</td>
+                    <td>1280x720</td>
+                    <td>1280x720</td>
+                </tr>
+                <tr>
+                    <td>Battery Life</td>
+                    <td>4.5 - 9 hrs</td>
+                    <td>4.5 - 9 hrs</td>
+                    <td>3 - 7 hrs</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>32 GB</td>
+                    <td>64 GB</td>
+                    <td>32 GB</td>
+                </tr>
+                <tr>
+                    <td>TV Mode</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                    <td class="cross">✖</td>
+                </tr>
+                <tr>
+                    <td>Detachable Joy-Con</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                    <td class="cross">✖</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>297 g</td>
+                    <td>320 g</td>
+                    <td>275 g</td>
+                </tr>
+                <tr>
+                    <td>Approx.Price (RM)</td>
+                    <td>1135</td>
+                    <td>1369</td>
+                    <td>899</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Footer, show copyright information-->
+    <footer class="footer text-center">
+        <p>© 2026 Student project – UCCD2323 Front-End Web Development, UTAR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
