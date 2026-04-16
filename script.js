@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!target) return;
 
         target.addEventListener("shown.bs.collapse", function () {
-            btn.innerHTML = "Hide Details";
+            btn.innerHTML = "Hide Specs";
         });
         target.addEventListener("hidden.bs.collapse", function () {
-            btn.innerHTML = "View Details";
+            btn.innerHTML = "View Specs";
         });
     });
 });
