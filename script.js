@@ -417,6 +417,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+
 /* ------------------------------ news.html jQuery --------------------------- */
 $(document).ready(function () {
 
@@ -442,5 +444,84 @@ $(document).ready(function () {
     $(".news-item").on("mouseleave", function () {
         preview.addClass("d-none");
     });
+
+        const featuredNews = [
+        {
+            img: "images/news1.jpeg",
+            title: "Rhythm Heaven Groove launches soon",
+            desc: "A rhythm-based game bringing fun music challenges to Nintendo Switch."
+        },
+        {
+            img: "images/news2.jpeg",
+            title: "Nintendo Switch Online Update",
+            desc: "Classic NES, SNES and Game Boy titles now available for members."
+        },
+        {
+            img: "images/news3.jpeg",
+            title: "Tomodachi Life Returns",
+            desc: "Create your Mii and explore a new simulation world full of surprises."
+        },
+        {
+            img: "images/news4.jpeg",
+            title: "What’s New on Nintendo eShop",
+            desc: "Looking for something new to play? Check out this week’s new releases for Nintendo Switch 2 and Nintendo Switch. To learn more or to buy a game, just head over to Nintendo eShop."
+        },
+        {
+            img: "images/news5.jpeg",
+            title: "Tiny Takeover drop is now available for Minecraft on Nintendo Switch",
+            desc: "Minecraft’s Tiny Takeover drop has landed for Nintendo Switch, bringing with it a barrage of redesigned baby mobs, a new item to keep them tiny forever, craftable name tags, and more"
+        },
+        {
+            img: "images/news6.jpeg",
+            title: "Introducing MAR10 Day and Topics Related to Mario",
+            desc: "MAR10 Day comes from the abbreviation “March 10”, which resembles “MARIO” in writing. Let’s take a look at some topics related to Mario, including new information announced on MAR10 Day."
+        }
+    ];
+
+    let index = 0;
+
+    function updateFeatured() {
+
+        const img = $("#featuredImg");
+        const title = $("#featuredTitle");
+        const desc = $("#featuredDesc");
+
+        img.addClass("fade-effect");
+        title.addClass("fade-effect");
+        desc.addClass("fade-effect");
+
+        setTimeout(() => {
+
+            img.attr("src", featuredNews[index].img);
+            title.text(featuredNews[index].title);
+            desc.text(featuredNews[index].desc);
+
+            img.removeClass("fade-effect").addClass("fade-in");
+            title.removeClass("fade-effect").addClass("fade-in");
+            desc.removeClass("fade-effect").addClass("fade-in");
+
+        }, 200);
+    }
+
+    // Next button
+    $("#nextBtn").click(function () {
+        index = (index + 1) % featuredNews.length;
+        updateFeatured();
+    });
+
+    // Prev button
+    $("#prevBtn").click(function () {
+        index = (index - 1 + featuredNews.length) % featuredNews.length;
+        updateFeatured();
+    });
+
+    // AUTO SLIDE
+    setInterval(function () {
+        index = (index + 1) % featuredNews.length;
+        updateFeatured();
+    }, 3000);
+
+    // Initial load
+    updateFeatured();
 
 });
