@@ -383,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!apiContainer) return;
 
-    const API_KEY = "YOUR_API_KEY_HERE"; 
+    const API_KEY = "f7fe88e1b10f4609bd68a40ff55c6a29"; 
     const url = `https://api.rawg.io/api/games?key=${API_KEY}&page_size=6`;
 
     fetch(url)
@@ -416,8 +416,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 });
-
-
 
 /* ------------------------------ news.html jQuery --------------------------- */
 $(document).ready(function () {

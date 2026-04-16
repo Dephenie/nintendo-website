@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nintendo | Home</title>
+    <link rel="icon" href="images/Nintendo-Logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Nintendo</a>
+
+            <button title="Toggle button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="console.html">Consoles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Nintendo <span>Switch</span></h1>
+            <p id="welcomeMsg">Play at home. Play on the go. Play together.</p>
+
+            <img src="images/hero-banner.png" alt="Nintendo Switch Banner">
+
+            <a href="console.html" class="btn-red mt-4 d-inline-block">See Consoles</a>
+        </div>
+    </div>
+
+    <!-- FEATURED GAMES -->
+    <div class="container my-5">
+        <h2 class="section-header">Featured Games</h2>
+        <p class="text-center">Some of the biggest titles on Nintendo Switch</p>
+
+        <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button title="0" type="button" data-bs-target="#gameCarousel" data-bs-slide-to="0" class="active"></button>
+                <button title="1" type="button" data-bs-target="#gameCarousel" data-bs-slide-to="1"></button>
+                <button title="2" type="button" data-bs-target="#gameCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+
+                <div class="carousel-item active">
+                    <img src="images/adventure2.jpeg" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/simulation.jpeg" class="d-block w-100" alt="">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/racing.jpeg" class="d-block w-100" alt="">
+                </div>
+
+            </div>
+
+            <button title="Previous" class="carousel-control-prev" type="button" data-bs-target="#gameCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button title="Next" class="carousel-control-next" type="button" data-bs-target="#gameCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- POPULAR GAMES -->
+    <div class="container mb-5">
+        <h2 class="section-header">Popular Games</h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card dark-card text-center p-3">
+                    <img src="images/adventure2.jpeg" alt="">
+                    <div class="card-body">
+                        <h6>Super Mario Odyssey</h6>
+                        <p class="desc">Platformer</p>
+                        <small>Rating: 97/100</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card dark-card text-center p-3">
+                    <img src="images/simulation.jpeg" alt="">
+                    <div class="card-body">
+                        <h6>Animal Crossing</h6>
+                        <p class="desc">Simulation</p>
+                        <small>Rating: 90/100</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card dark-card text-center p-3">
+                    <img src="images/racing.jpeg" alt="">
+                    <div class="card-body">
+                        <h6>Mario Kart 8</h6>
+                        <p class="desc">Racing</p>
+                        <small>Rating: 92/100</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card dark-card text-center p-3">
+                    <img src="images/adventure1.jpeg" alt="">
+                    <div class="card-body">
+                        <h6>Zelda BOTW</h6>
+                        <p class="desc">Adventure</p>
+                        <small>Rating: 97/100</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- WHY SECTION -->
+    <div class="dark-section">
+        <div class="container">
+            <h2 class="section-title mb-3">Why Nintendo Switch?</h2>
+            <div class="row g-3">
+
+                <div class="col-md-3 col-6">
+                    <div class="card dark-card p-3 text-center">
+                        <h6>Play at Home</h6>
+                        <p class="small">Dock it to TV</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card dark-card p-3 text-center">
+                        <h6>Play Anywhere</h6>
+                        <p class="small">Handheld mode</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card dark-card p-3 text-center">
+                        <h6>Play With Friends</h6>
+                        <p class="small">Local multiplayer</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card dark-card p-3 text-center">
+                        <h6>Huge Library</h6>
+                        <p class="small">Many games</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWS + QUICK NAV -->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <h2 class="section-header">Latest Announcements</h2>
+
+                <div class="news-item">
+                    <div class="news-title">Mario Kart World announced</div>
+                    <div class="news-date">March 2026</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">System Update v18.1.0</div>
+                    <div class="news-date">February 2026</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-title">eShop Spring Sale</div>
+                    <div class="news-date">March 2026</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="section-header">Quick Navigation</h2>
+
+                <div class="row g-2 quick-nav">
+                    <div class="col-4"><a href="about.html">About</a></div>
+                    <div class="col-4"><a href="console.html">Consoles</a></div>
+                    <div class="col-4"><a href="games.html">Games</a></div>
+                    <div class="col-4"><a href="accessories.html">Accessories</a></div>
+                    <div class="col-4"><a href="news.html">News</a></div>
+                    <div class="col-4"><a href="wishlist.html">Wishlist</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+        © 2026 Student project – UCCD2323 UTAR
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

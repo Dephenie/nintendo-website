@@ -166,6 +166,179 @@ h1, h2, h3, h4, .navbar-brand {
     margin-bottom: 5px;
 }
 
+/* ================= HOME PAGE EXTRA ================= */
+.hero-section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #1e293b;
+}
+
+.hero-section h1 span {
+    color: red;
+}
+
+.hero-section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-section img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.btn-red {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-red:hover {
+    background: darkred;
+    color: white;
+}
+
+.dark-section {
+    background: #0f172a;
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+.dark-section .section-title,
+.dark-section p {
+    color: white;
+}
+
+.quick-nav a {
+    display: block;
+    padding: 10px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.quick-nav a:hover {
+    background: red;
+}
+
+.page-header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #1e293b;
+}
+
+.page-header h1 span {
+    color: red;
+}
+
+.page-header p {
+    color: #666;
+}
+
+.breadcrumb-bar {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #888;
+}
+
+.breadcrumb-bar a {
+    color: red;
+    text-decoration: none;
+}
+
+.gallery-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.timeline-card {
+    background: #1e293b;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.timeline-card .year {
+    color: red;
+    font-weight: bold;
+}
+
+.timeline-dot span {
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.console-card {
+    background: #1e293b;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.console-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.console-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 12px red;
+}
+
+.console-card a {
+    color: red;
+    text-decoration: none;
+}
+
+.phil-box {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+blockquote {
+    color: #ddd;
+    border-left: 3px solid red;
+    padding-left: 12px;
+}
+
 /* ------------------------------- table for console page ------------------------------- */
 .custom-table {
     width: 100%;
